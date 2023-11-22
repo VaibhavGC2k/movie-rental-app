@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>genreHeader}}
+</head>
+<body>
+    {{>navbar}}
+    <div class="genre-container">
+        <label for="genreName">Genre</label>
+        <input type="text" id="genreName" name="genreName" required>
+        <button id="addGenreBtn">Add Genre</button>
+    </div>
+
+    <div id="genreContainer" class="genre-container">
+    </div>
+
+    <script type="text/javascript" src="/genre.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    background-color: #218a8a;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    background-color: #555;
+    margin: 10px;
+    overflow: auto;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #4caf50;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+  form[action="/logout"] {
+    display: inline; 
+    margin-right: 10px; 
+    align-self: flex-end;
+  }
+  
+  button[type="submit"] {
+    background-color: #d32f2f;
+    color: #fff;
+    align-self: center;
+    padding: 12px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(161, 59, 34);
+  }
+  
+  
+
+.genre-container {
+  background-color: #ffffffb7;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.genre-container label {
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.genre-container input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.genre-container button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.genre-container button:hover {
+  background-color: #45a049;
+}

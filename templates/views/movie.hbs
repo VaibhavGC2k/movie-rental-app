@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>movieHeader}}
+</head>
+<body>
+    {{>navbar}}
+    {{#if isAdmin}}
+    <div class="movie-container">
+    <h1>Movie</h1>
+        <label for="movieName"><b>Title :</b></label>
+        <input type="text" id="movieName" name="movieName" required>
+        <label for="genreName"><b>Genre :</b></label>
+        <select name="genre" id="genre">
+            <option value="none" selected disabled>Select an Option</option>
+        </select>
+        <label for="drr"><b>Rental Rate :</b></label>
+        <input type="number" id="drr" name="drr" required>
+        <label for="imdb"><b>IMDB rating :</b></label>
+        <input type="number" max="10" min="0" id="imdb" name="imdb" required>
+        <button id="addMovieBtn">Add Movie</button>
+    </div>
+    {{/if}}
+      <div class="genre-filter">
+        <select name="gf" id="gf">
+              <option value="none" selected disabled>All Genre</option>
+        </select>
+      </div>
+    <table>
+      <caption>MOVIES</caption> 
+      <thead>
+        <tr>
+          <th>Sl No</th>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Daily Rental Rate</th>
+          <th>IMDB Rating</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="movieTableBody">
+      </tbody>
+    </table>
+    <script type="text/javascript" src="/movie.js"></script>
+</body>
+</html>

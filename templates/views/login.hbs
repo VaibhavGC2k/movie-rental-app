@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>loginHeader}}
+</head>
+<body>
+    {{>navbar}}
+    <div class="main-container">
+    <div class="login-container">
+        <h1>Login</h1>
+        <hr>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password"><b>Password</b></label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" value="Login" class="login-btn">Login</button>
+        </form>
+        <a href="./register" class="signup-link">New user? Sign up here</a>
+    </div>
+    </div>
+
+</body>
+</html>

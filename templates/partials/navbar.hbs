@@ -1,0 +1,15 @@
+<div class="navbar">
+  <a class="active" href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="/movie"><i class="fa fa-fw fa-search"></i> Movies</a>
+  <a href="/genre"><i class="fa fa-fw fa-film"></i> Genres</a>
+  <a href="/rental"><i class="fa fa-fw fa-video"></i> Rentals</a>
+  {{#if logout}}
+    <form action="/logout" method="POST">
+      <button type="submit"><i class="fa fa-fw fa-sign-out-alt"></i>
+        Logout</button>
+    </form>
+  {{else}}
+    <a href="/register"><i class="fa fa-fw fa-user-plus"></i> Register</a>
+    <a href="/login"><i class="fa fa-fw fa-sign-in-alt"></i> Login</a>
+  {{/if}}
+</div>

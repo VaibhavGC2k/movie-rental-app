@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>rentalHeader}}
+</head>
+<body>
+    {{>navbar}}
+    <table>
+      <caption>RENTALS</caption>
+      <thead>
+        <tr>
+          <th>Sl No</th>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Daily Rental Rate(Rs)</th>
+          <th>User</th>
+          <th>Email</th>
+          <th>Date Out</th>
+          <th>Date In</th>
+          <th>Rental Fee</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+    <tbody id="rentalTableBody">
+    {{#each rentals}}
+      <tr data-rental-id="{{this._id}}">
+        <td>{{this.slNo}}</td>
+        <td>{{this.title}}</td>
+        <td>{{this.genre}}</td>
+        <td>{{this.dailyRentalRate}}</td>
+        <td>{{this.user}}</td>
+        <td>{{this.email}}</td>
+        <td>{{this.dateOut}}</td>
+        <td>{{this.dateIn}}</td>
+        <td>{{this.rentalFee}}</td>
+        <td>
+          <button class="updateMovieBtn">Update</button>
+          <button class="deleteMovieBtn">Delete</button>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+  </table>
+    <script type="text/javascript" src="/rental.js"></script>
+</body>
+</html>

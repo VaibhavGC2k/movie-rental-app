@@ -1,0 +1,151 @@
+body {
+  background-color: #218a8a;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #555;
+  margin: 10px;
+  overflow: auto;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+form[action="/logout"] {
+  display: inline;
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+button[type="submit"] {
+  background-color: #d32f2f;
+  color: #fff;
+  align-self: center;
+  padding: 12px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(161, 59, 34);
+}
+
+/* Table Style */
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #312727;
+  color: whitesmoke;
+}
+
+.deleteMovieBtn{
+  padding: 8px 12px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  background-color: #d32f2f;
+  color: whitesmoke;
+}
+
+.updateMovieBtn:hover{
+  background-color: rgb(23, 116, 133);
+}
+
+.deleteMovieBtn:hover{
+  background-color: rgb(161, 59, 34);
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+  th,
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    background-color: wheat;
+  }
+
+  tbody tr:last-child {
+    margin-bottom: 0;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+    margin-right: -50%;
+  }
+}
+
+tbody{
+  background-color: #ccc;
+}
+
+caption{
+  background-color: #312727;
+  color: whitesmoke;
+  font-size: 35px;
+  font-weight: bold;
+  height: 40px;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.updateMovieBtn{
+  padding: 8px 12px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  background-color: rgb(60, 184, 206);
+  color: whitesmoke;
+}

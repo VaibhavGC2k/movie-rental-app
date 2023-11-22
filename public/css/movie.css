@@ -1,0 +1,200 @@
+body {
+  background-color: #218a8a;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #555;
+  margin: 10px;
+  overflow: auto;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+form[action="/logout"] {
+  display: inline;
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+button[type="submit"] {
+  background-color: #d32f2f;
+  color: #fff;
+  align-self: center;
+  padding: 12px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(161, 59, 34);
+}
+
+.movie-container {
+  background-color: #ffffffb7;
+  color: #000;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.movie-container h1 {
+  text-align: center;
+}
+
+.movie-container label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.movie-container input,
+.movie-container select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.movie-container button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.movie-container button:hover {
+  background-color: #45a049;
+}
+/* All genres  */
+.genre-filter {
+  display: flex;
+  justify-content: flex-start; /* Align items to the right end */
+  align-items: flex-start;
+  margin-bottom: 15px; /* Add margin for spacing */
+}
+
+
+.genre-filter select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* table style  */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+caption{
+  background-color: #312727;
+  color: whitesmoke;
+  font-size: 35px;
+  font-weight: bold;
+  height: 40px;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+thead{
+  background-color: #312727;
+  color: whitesmoke;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  background-color: #8aff8a;
+  padding: 8px 12px;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+}
+
+@media (max-width: 600px) {
+  th,
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    background-color: wheat;
+  }
+
+  tbody tr:last-child {
+    margin-bottom: 0;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+    margin-right: -50%;
+  }
+}
+
+tbody{
+  background-color: #ccc;
+}
