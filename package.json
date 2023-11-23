@@ -4,8 +4,9 @@
   "description": "Final year project Clone",
   "main": "index.js",
   "scripts": {
+    "build":"npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js -e js,hbs,css"
+    "dev": "app.js -e js,hbs,css"
   },
   "author": "Vaibhav Chowdhary",
   "license": "ISC",
