@@ -4,6 +4,7 @@
   "description": "Final year project Clone",
   "main": "index.js",
   "scripts": {
+    "build":"npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "app.js -e js,hbs,css"
   },
